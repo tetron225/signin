@@ -1,7 +1,19 @@
+@font-face {
+    font-family: 'alex_brushregular';
+    src: url('alexbrush-regular-webfont.woff2') format('woff2'),
+         url('alexbrush-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body {
     min-height: 100vh;
     display: flex;
     flex-direction: row;
+    margin-left: 300px;
+    margin-right: 300px;
+    background-color: white;  
 }
 
 #container1 {
@@ -11,7 +23,17 @@ body {
     min-height: 100%;
     width: 50%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;   
+}
+
+#titletext {
+    color: white;
+    font-size: 50px;
+    padding-top: 100px;
+    font-family: "alex_brushregular";
+    
 }
 
 
@@ -20,12 +42,14 @@ body {
     display: flex;
     flex-direction: column;
     border: 1px solid;
-    box-shadow: 2px 2px 4px 2px #888888;
+    box-shadow: 2px 2px 4px 2px #e6e3e3;
     padding: 30px;
 }
 
 #sometext {
     padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 #formcontainer {
@@ -41,12 +65,23 @@ input {
     width: 220px;
 }
 
+input:invalid {
+    border-color: red;
+}
+
+input:valid {
+    border-color: green;
+}
+
 #firstbox {
     padding:20px;
     display:flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: space-around;
+    font-size: 12px;
+    font-weight: bold;
+    color: gray;
 }
 
 #secondbox {
@@ -54,6 +89,9 @@ input {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    font-size: 12px;
+    font-weight: bold;
+    color: gray;
 }
 
 #footy {
@@ -84,9 +122,8 @@ input {
 }
 
 #text {
-    font-size: 30px;
+    font-size: 25px;
     padding-bottom: 30px;
-    padding-right: 370px;
     padding-left: 50px;
 
     font-weight: bold;
@@ -94,6 +131,6 @@ input {
 
 #footnote {
     padding: 50px;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: bolder;
 }
